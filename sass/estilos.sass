@@ -1,0 +1,248 @@
+@use 'variables'
+
+*
+    font-family: 'Roboto Mono', monospace
+    background: black
+   
+
+h1
+    color: variables.$text-secondary
+    text-transform: uppercase
+    
+
+p
+    font-size: 15pt
+    color: variables.$text-secondary
+
+span
+    color: variables.$text-tertiary
+
+nav
+    
+    
+    ul
+        list-style: none
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        li
+            padding: 10px
+            margin-left: 10px
+            background: variables.$text-primary
+            
+            border-radius: 15px
+            a
+                text-decoration: none
+                color: variables.$text-secondary
+                font-weight: bold
+                text-transform: uppercase
+                background: none
+
+                &:hover
+                   text-decoration: underline
+              
+
+.container-card
+    margin-top: 10px
+
+.title-card 
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 40px
+    background: pink
+    padding: 10px
+    
+.card
+    display: flex
+    flex-direction: row
+    margin-top: 20px
+
+
+    &-inner  
+        border: 1px solid variables.$text-primary
+        border-radius: 15px
+        width: 300px
+        height:240px
+        margin: auto
+        text-align: center
+        cursor: pointer
+    
+
+        &:hover
+            box-shadow: 1px 1px 15px variables.$text-primary
+
+        img
+            width: 50px
+            height: 50px
+            margin-top: 20px
+        
+
+.btn1
+    background-color: variables.$bg-color
+    font-weight: bold
+    
+    margin-top: 10px
+    padding: 10px
+    width: 150px
+
+    border-radius: 15px
+
+    &:hover
+        cursor: pointer
+
+    a
+        text-decoration: none
+        color: variables.$text-secondary
+        background: none
+        font-weight: bold
+        text-transform: uppercase
+
+.rodape
+    border: 1px solid #000
+    background-color: variables.$bg-color
+    margin-top: 10px
+
+.rodape-links
+    text-align: center
+    padding: 10px
+    
+    a
+        font-weight: bold
+        padding-left: 15px
+
+.section-principal
+    margin-top: 20px
+    box-shadow: 1px 1px 15px variables.$text-primary
+    border: 1px solid variables.$text-primary
+    display: flex
+    flex-direction: row
+    
+.section-img 
+    border-right: 1px solid variables.$text-primary
+
+    width: 250px
+    height: 250px
+    
+    
+    img
+        width: 250px
+        height: 250px
+
+
+
+.section-principal
+    margin-top: 40px    
+
+    &-title
+        text-align: center
+
+.section-p
+    margin:0px 10px
+    color: variables.$text-primary
+
+
+
+.section2
+    margin-top: 40px
+    border: 1px solid pink
+    background-color: pink
+
+.title2
+    text-align: center
+    color: purple
+    background-color: pink
+
+.texto2
+    text-align: center
+    background-color: pink
+
+
+.section3
+    margin-top: 40px
+
+.title3
+    text-align: center
+    color: white
+
+.card2
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+
+.card-inner2
+    background-color: pink
+    border: 1px solid variables.$text-primary
+    width: 300px
+    height: 300px
+
+    &:hover 
+        cursor: pointer
+        
+
+
+.texto3
+    text-align: center
+    background-color: pink
+
+    .icon
+        background-color: pink
+        
+        i
+            color: purple
+            background-color: pink
+            margin-top: 40px
+    
+    h2
+        color: purple
+        background-color: pink
+        font-size: 14pt
+
+    p
+        color: black
+        background-color: pink
+        font-size: 12pt
+        font-weight: bold
+
+
+.rodape
+    position: relative
+    top: 100px
+
+
+.rodape-links
+    background-color: variables.$text-primary
+
+    a
+        background: none
+        text-decoration: none
+
+        &:hover
+            text-decoration: underline
+        
+        
+
+
+/* Animação */
+
+[data-anime] 
+    opacity: 0
+    transition: .5s
+  
+  
+[data-anime="left"] 
+    transform: translate3d(0, 0, 0)
+  
+  
+[data-anime="right"] 
+    transform: translate3d(450px, 0, 0)
+  
+  
+[data-anime="top"] 
+    transform: translate3d(0, 0, 0)
+  
+
+[data-anime].animate 
+    opacity: 1
+    transform: translate3d(0px, 0px, 0px)
+  

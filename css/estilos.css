@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto Mono", monospace;
+  background: black;
+}
+
+h1 {
+  color: purple;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 15pt;
+  color: purple;
+}
+
+span {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav ul li {
+  padding: 10px;
+  margin-left: 10px;
+  background: pink;
+  border-radius: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container-card {
+  margin-top: 10px;
+}
+
+.title-card {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: pink;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.card-inner {
+  border: 1px solid pink;
+  border-radius: 15px;
+  width: 300px;
+  height: 240px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+.card-inner:hover {
+  box-shadow: 1px 1px 15px pink;
+}
+.card-inner img {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.btn1 {
+  background-color: pink;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 15px;
+}
+.btn1:hover {
+  cursor: pointer;
+}
+.btn1 a {
+  text-decoration: none;
+  color: purple;
+  background: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rodape {
+  border: 1px solid #000;
+  background-color: pink;
+  margin-top: 10px;
+}
+
+.rodape-links {
+  text-align: center;
+  padding: 10px;
+}
+.rodape-links a {
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.section-principal {
+  margin-top: 20px;
+  box-shadow: 1px 1px 15px pink;
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-img {
+  border-right: 1px solid pink;
+  width: 250px;
+  height: 250px;
+}
+.section-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.section-principal {
+  margin-top: 40px;
+}
+.section-principal-title {
+  text-align: center;
+}
+
+.section-p {
+  margin: 0px 10px;
+  color: pink;
+}
+
+.section2 {
+  margin-top: 40px;
+  border: 1px solid pink;
+  background-color: pink;
+}
+
+.title2 {
+  text-align: center;
+  color: purple;
+  background-color: pink;
+}
+
+.texto2 {
+  text-align: center;
+  background-color: pink;
+}
+
+.section3 {
+  margin-top: 40px;
+}
+
+.title3 {
+  text-align: center;
+  color: white;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-inner2 {
+  background-color: pink;
+  border: 1px solid pink;
+  width: 300px;
+  height: 300px;
+}
+.card-inner2:hover {
+  cursor: pointer;
+}
+
+.texto3 {
+  text-align: center;
+  background-color: pink;
+}
+.texto3 .icon {
+  background-color: pink;
+}
+.texto3 .icon i {
+  color: purple;
+  background-color: pink;
+  margin-top: 40px;
+}
+.texto3 h2 {
+  color: purple;
+  background-color: pink;
+  font-size: 14pt;
+}
+.texto3 p {
+  color: black;
+  background-color: pink;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.rodape {
+  position: relative;
+  top: 100px;
+}
+
+.rodape-links {
+  background-color: pink;
+}
+.rodape-links a {
+  background: none;
+  text-decoration: none;
+}
+.rodape-links a:hover {
+  text-decoration: underline;
+}
+
+/* Animação */
+[data-anime] {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-anime=left] {
+  transform: translate3d(0, 0, 0);
+}
+
+[data-anime=right] {
+  transform: translate3d(450px, 0, 0);
+}
+
+[data-anime=top] {
+  transform: translate3d(0, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*# sourceMappingURL=estilos.css.map */
