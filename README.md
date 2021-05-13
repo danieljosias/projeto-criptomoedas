@@ -1,5 +1,5 @@
 # Criptomoedas Brasil
-## Criei um site chamado Criptomoedas Brasil que contém 9 páginas.
+## Criei um site de Criptomoedas que contém 9 páginas.
 ## Estruturação: HTML5
 ## Estilização: SASS
 ## Animações: JS
